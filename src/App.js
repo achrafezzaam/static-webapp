@@ -6,12 +6,17 @@ function Header() {
     <header>
       <nav>
         <img src={logo} width="100px" alt="App logo" />
+        <ul>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
   );
 }
 
-function App() {
+function MainContent() {
   return (
     <div>
       <h1>Reasons I'm excited to learn React</h1>
@@ -33,4 +38,14 @@ function Footer() {
   );
 }
 
-export {Header, App, Footer};
+function App() {
+  return(
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
