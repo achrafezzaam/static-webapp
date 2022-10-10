@@ -4,9 +4,9 @@ import './App.css';
 function Header() {
   return (
     <header>
-      <nav>
-        <img src={logo} width="100px" alt="App logo" />
-        <ul>
+      <nav className='nav-container'>
+        <img src={logo} className='nav-img' alt="App logo" />
+        <ul className='nav-links'>
           <li>Pricing</li>
           <li>About</li>
           <li>Contact</li>
@@ -18,7 +18,7 @@ function Header() {
 
 function MainContent() {
   return (
-    <div>
+    <div className='main-body-container'>
       <h1>Reasons I'm excited to learn React</h1>
       <ol>
         <li>It's a popular library, so I'll be 
@@ -32,7 +32,7 @@ function MainContent() {
 
 function Footer() {
   return(
-    <footer>
+    <footer className='footer-container'>
       <small>© 2022 Achraf Ezzaam development. All rights reserved.</small>
     </footer>
   );
